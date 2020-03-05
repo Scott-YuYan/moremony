@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import NextPage from '../views/NextPage.vue';
+import BackPage from '../views/BackPage.vue';
+import Cancel from '../views/Cancel.vue';
+import Finish from '../views/Finish.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
@@ -11,17 +15,27 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/nextPage',
+    name: 'nextPage',
+    component: NextPage
+  },
+  {
+    path: '/backPage',
+    name: 'backPage',
+    component: BackPage
+  }, {
+    path: '/finish',
+    name: 'Finish',
+    component: Finish
+  }, {
+    path: '/cancel',
+    name: 'Cancel',
+    component: Cancel
   }
-]
+];
 
 const router = new VueRouter({
   routes
-})
+});
 
-export default router
+export default router;
