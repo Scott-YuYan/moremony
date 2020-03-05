@@ -5,10 +5,15 @@ import NextPage from '../views/NextPage.vue';
 import BackPage from '../views/BackPage.vue';
 import Cancel from '../views/Cancel.vue';
 import Finish from '../views/Finish.vue';
+import NotFound from '../views/NotFound.vue'
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '*',
+    component: NotFound
+  },
   {
     path: '/',
     name: 'Home',

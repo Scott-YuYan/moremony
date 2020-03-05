@@ -1,9 +1,20 @@
 <template>
-  <div class="outer">
-    <div class="content">
-      <p>Hello Vue</p>
-    </div>
-      <Nav/>
+  <div>
+    <Layout #header>
+      <div>
+        <span>存储库：</span>
+        <span></span>
+      </div>
+      <div>
+        <span>文档类型：</span>
+        <select name="文档类型">
+          <option>--请选择文档类型--</option>
+          <option>--文档类型1--</option>
+          <option>--文档类型2--</option>
+        </select>
+      </div>
+
+    </Layout>
   </div>
 </template>
 
@@ -17,16 +28,4 @@
 </script>
 
 <style type="scss" scoped>
-  .outer {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .content {
-    overflow: auto;
-    flex-grow: 1;
-  }
-
 </style>

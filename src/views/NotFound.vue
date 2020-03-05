@@ -1,15 +1,12 @@
 <template>
   <div>
-   <Layout #header>
-     <span>这是上一页</span>
-   </Layout>
+    <img src="../assets/png/404.png" alt="NotFound">
   </div>
-
 </template>
 
 <script>
   export default {
-    name: "BackPage"
+    name: "NotFound"
   }
 </script>
 

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Nav/>
+    <Layout #header>
+      <span>取消!</span>
+    </Layout>
   </div>
 </template>
 

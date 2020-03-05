@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Nav/>
+    <Layout #header>
+      <span>这是下一页</span>
+    </Layout>
   </div>
 </template>
 

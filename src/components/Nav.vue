@@ -2,6 +2,9 @@
   <div>
     <div>
       <div>
+
+        <span>*表示必填项</span>
+
         <router-link to="/">主页</router-link>
         |
         <router-link to="/backPage">上一页(B)</router-link>

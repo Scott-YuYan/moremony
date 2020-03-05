@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Nav/>
+    <Layout #header>
+      完成!
+    </Layout>
   </div>
 </template>
 
