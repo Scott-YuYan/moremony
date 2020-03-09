@@ -9,11 +9,8 @@
         <span>文档类型：</span>
         <select name="文档类型">
           <option>--请选择文档类型--</option>
-          <option>--文档类型1--</option>
-          <option>--文档类型2--</option>
         </select>
       </div>
-
     </Layout>
   </div>
 </template>

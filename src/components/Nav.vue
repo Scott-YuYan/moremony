@@ -1,29 +1,42 @@
 <template>
   <div>
     <div>
-      <div>
-
-        <span>*表示必填项</span>
-
-        <router-link to="/">主页</router-link>
+      <div class="fontTemplate">
+        <router-link to="/">
+          <Icon icon-name="zhuye"/>
+          主页
+        </router-link>
         |
-        <router-link to="/backPage">上一页(B)</router-link>
+        <router-link to="/backPage">
+          <Icon icon-name="prev-blue"></Icon>
+          上一页(B)
+        </router-link>
         |
-        <router-link to="/nextPage">下一页(N)</router-link>
+        <router-link to="/nextPage">
+          下一页(N)
+          <Icon icon-name="next-blue"></Icon>
+        </router-link>
         |
-        <router-link to="/finish">完成(F)</router-link>
+        <router-link to="/finish">完成(F)
+          <Icon icon-name="wancheng"></Icon>
+        </router-link>
         |
-        <router-link to="/cancel">取消(C)</router-link>
+        <router-link to="/cancel">取消(C)
+          <Icon icon-name="cancel"></Icon>
+        </router-link>
       </div>
     </div>
   </div>
 </template>
 
-<script>
+<script lang="ts">
   export default {
-    name: "Nav"
-  }
+    name: 'Nav'
+  };
 </script>
 
 <style type="scss" scoped>
+  .fontTemplate {
+    font-size: 20px;
+  }
 </style>

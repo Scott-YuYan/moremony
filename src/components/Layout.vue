@@ -2,18 +2,18 @@
   <div class="outer">
     <div class="content">
       <slot name="header"></slot>
-
     </div>
-    <Nav/>
+    <div>
+      <Nav/>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
   export default {
-    name: "Layout",
-    component: "Layout"
-  }
-  import svg from '@/assets/svg/number1.svg'
+    name: 'Layout',
+    component: 'Layout'
+  };
 
 </script>
 
@@ -29,5 +29,4 @@
     overflow: auto;
     flex-grow: 1;
   }
-
 </style>
