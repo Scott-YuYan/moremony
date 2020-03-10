@@ -2,15 +2,15 @@
   <div>
     <div>
       <nav>
-        <router-link to="/" class="item">
+        <router-link to="/home" class="item" active-class="selected">
           <Icon icon-name="zhuye"/>
           主页(H)
         </router-link>
-        <router-link to="/backPage" class="item">
+        <router-link to="/backPage" class="item" active-class="selected">
           <Icon icon-name="prev-blue"></Icon>
           上一页(B)
         </router-link>
-        <router-link to="/nextPage" class="item">
+        <router-link to="/nextPage" class="item" active-class="selected">
           <Icon icon-name="next-blue"></Icon>
           下一页(N)
         </router-link>
@@ -34,6 +34,7 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../assets/style/color/helper";
   nav{
     display: flex;
     flex-direction: row;
@@ -45,6 +46,9 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
+    }
+    > .item.selected{
+      color: $blue;
     }
   }
   </style>

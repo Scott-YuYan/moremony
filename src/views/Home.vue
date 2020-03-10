@@ -2,15 +2,19 @@
   <div>
     <Layout #header>
       <div>
-        <span>存储库：</span>
-        <span></span>
+        <label>
+          存储库：
+          <input type="text">
+        </label>
       </div>
-      <div>
-        <span>文档类型：</span>
-        <select name="文档类型">
-          <option>--请选择文档类型--</option>
-        </select>
+      <div>主要内容源
+        <ul>
+          <li>本机文件</li>
+          <li>url</li>
+        </ul>
       </div>
+      <div>属性</div>
+      <div>业务</div>
     </Layout>
   </div>
 </template>

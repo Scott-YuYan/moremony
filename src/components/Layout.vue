@@ -19,10 +19,10 @@
 
 <style type="text/css" scoped>
   .outer {
-    background: white;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: rgb(204,221,231);
   }
 
   .content {

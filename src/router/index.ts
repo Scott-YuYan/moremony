@@ -15,7 +15,7 @@ const routes = [
     component: NotFound
   },
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home
   },

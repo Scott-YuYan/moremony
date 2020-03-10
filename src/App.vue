@@ -1,10 +1,11 @@
 <template>
-<div>
+<div id="app">
   <router-view/>
 </div>
 </template>
 
 <style lang="scss">
+  @import "src/assets/style/font/hepler.scss";
   * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,13 @@
     text-decoration: none;
     color: inherit;
   }
+  #app{
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   body{
     line-height: 1.5;
+    font-family: $heiTi;
   }
 </style>
