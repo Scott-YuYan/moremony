@@ -10,7 +10,7 @@
     name: "Icon"
   }
 
-  let importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
+  const importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
   try {
     importAll(require.context('../assets/icons', true, /\.svg$/));
   } catch (error) {
@@ -21,7 +21,7 @@
 
 <style scoped>
   .IconLClass{
-    width: 1em; height: 1em;
+    width: 2em; height: 2em;
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;

@@ -1,4 +1,4 @@
-<template xmlns="">
+<template>
   <div class="outer">
     <div class="content">
       <slot name="header"></slot>
@@ -19,13 +19,14 @@
 
 <style type="text/css" scoped>
   .outer {
-    border: 1px solid black;
+    background: white;
     display: flex;
     flex-direction: column;
     height: 100vh;
   }
 
   .content {
+    background: white;
     overflow: auto;
     flex-grow: 1;
   }
