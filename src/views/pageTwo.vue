@@ -1,8 +1,7 @@
 <template>
   <div>
    <Layout #header>
-     <Icon icon-name="number1"></Icon>
-     <span>这是上一页</span>
+     <NumberToChoice></NumberToChoice>
    </Layout>
   </div>
 

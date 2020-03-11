@@ -1,11 +1,14 @@
 <template>
-  <div class="outer">
-    <div class="content">
-      <slot name="header"></slot>
+  <div>
+    <div class="outer">
+      <div class="content">
+        <slot name="header"></slot>
+      </div>
+      <div>
+        <Nav/>
+      </div>
     </div>
-    <div>
-      <Nav/>
-    </div>
+
   </div>
 </template>
 
@@ -26,8 +29,8 @@
   }
 
   .content {
-    background: white;
     overflow: auto;
     flex-grow: 1;
+    background: white;
   }
 </style>

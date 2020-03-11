@@ -1,20 +1,9 @@
 <template>
   <div>
     <Layout #header>
-      <div>
-        <label>
-          存储库：
-          <input type="text">
-        </label>
+      <div class="entry">
+        <NumberToChoice></NumberToChoice>
       </div>
-      <div>主要内容源
-        <ul>
-          <li>本机文件</li>
-          <li>url</li>
-        </ul>
-      </div>
-      <div>属性</div>
-      <div>业务</div>
     </Layout>
   </div>
 </template>
@@ -29,4 +18,27 @@
 </script>
 
 <style type="scss" scoped>
+  .entry{
+    height: 8vh;
+  }
+  .tags {
+
+  }
+
+  .tags > .library {
+
+  }
+
+  .tags > .library > label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+    border: 1px solid red;
+  }
+
+  .tags > .library > label >input{
+    border: 1px solid yellow;
+  }
+
 </style>

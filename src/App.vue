@@ -23,5 +23,12 @@
   body{
     line-height: 1.5;
     font-family: $heiTi;
+    font-size: 16px;
   }
+
+  ul li {
+    list-style: none;
+  }
+
+
 </style>
